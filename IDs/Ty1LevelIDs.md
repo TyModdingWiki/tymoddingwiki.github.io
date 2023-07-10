@@ -4,6 +4,7 @@ title: Ty 1 Level IDs
 nav_order: 2
 ---
 
+# TY 1 Level IDs
 
 | Level ID | Level Name
 | ----------------------------- | -----------------------------
