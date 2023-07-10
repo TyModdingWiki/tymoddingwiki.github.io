@@ -1,10 +1,8 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Ty Modding Wiki
+description: A wiki for all info about Ty modding
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://tymoddingwiki.github.io
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
-
-remote_theme: just-the-docs/just-the-docs
+  Template Repository: https://github.com/TyModdingWiki/tymoddingwiki
