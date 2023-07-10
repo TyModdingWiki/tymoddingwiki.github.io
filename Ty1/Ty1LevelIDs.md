@@ -8,7 +8,7 @@ parent: Ty 1
 # TY 1 Level IDs
 
 | Level ID | Level Name
-| ----------------------------- | -----------------------------
+| :-: | -
 | Z1 | Rainbow Cliffs
 | Z2 | E3 Demo [Broken .lv2]
 | Z3 | Unused
