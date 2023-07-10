@@ -2,7 +2,7 @@
 layout: default
 title: Ty 1 Level IDs
 nav_order: 1
-parent: Ty1
+parent: Ty 1
 ---
 
 # TY 1 Level IDs
