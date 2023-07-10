@@ -1,3 +1,10 @@
+---
+layout: default
+title: Ty 1 Level IDs
+nav_order: 5
+---
+
+
 | Level ID | Level Name
 | ----------------------------- | -----------------------------
 | Z1 | Rainbow Cliffs
