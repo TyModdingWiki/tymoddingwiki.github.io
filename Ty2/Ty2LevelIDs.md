@@ -10,7 +10,7 @@ parent: Ty 2
 ## Levels
 
 | Level ID | Level Name
-| ----------------------------- | -----------------------------
+| :-: | -----------------------------
 | Z2 | Burramudgee Town
 | Z3 | Currawong
 | Z4 | Southern Rivers
@@ -28,7 +28,7 @@ parent: Ty 2
 ## Races
 
 | Race ID | Race Name
-| ----------------------------- | -----------------------------
+| :-: | -----------------------------
 | R1 | Refinery Run
 | R2 | Lava Falls
 | R3 | Hearty Beach Race
@@ -40,7 +40,7 @@ parent: Ty 2
 ## Missions
 
 | Mission ID | Mission Name
-| ----------------------------- | -----------------------------
+| :-: | -----------------------------
 | M2 | Lake Burramudgee
 | M12 | Frill Neck Forest
 | M13 | Muddy Bottom
