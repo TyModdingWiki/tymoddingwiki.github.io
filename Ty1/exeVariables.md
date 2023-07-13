@@ -18,6 +18,6 @@ All values based on the newest exe version of Ty (version  1.44)
 | Cogs | Byte? | 0xE6AE8 | Could potentially be a int
 | Bilbies | Byte? | 0xE6B01 | Could potentially be a int
 | Frames | Short? | 0xE6B33 | Could potentially be a int
-| | | |
+|  |  |  |
 | Level Total Opals | int | 0xE5277 | Total amount in every level
 | Total Rainbow Scales | int | 0xE527C | 
