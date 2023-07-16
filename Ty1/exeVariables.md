@@ -27,19 +27,20 @@ To Do: Check variable type
 >
 >| Variable | Variable Type | Hex Offset | Notes
 >| - | - | - | -
->| Opals | Short? | 0xE6A91 | Could potentially be a int
->| Thunder Eggs | Byte? | 0xE6B1A | Could potentially be a int
->| Talismans | Byte? | 0xE6ACF | Could potentially be a int
->| Cogs | Byte? | 0xE6AE8 | Could potentially be a int
->| Bilbies | Byte? | 0xE6B01 | Could potentially be a int
->| Frames | Short? | 0xE6B33 | Could potentially be a int
+>| Opals | int | 0xE6A91 | 
+>| Rainbow Scales | int | 0xE6AB6 | Value for the totals screen, make sure to edit the other one for Rainbow Cliffs too
+>| Talismans | int | 0xE6ACF | 
+>| Cogs | int | 0xE6AE8 | 
+>| Bilbies | int | 0xE6B01 | 
+>| Thunder Eggs | int | 0xE6B1A | 
+>| Frames | int | 0xE6B33 | 
 
 >### Totals for Each Level
 >
 >| Variable | Variable Type | Hex Offset | Notes
 >| - | - | - | -
 >| Level Total Opals | int | 0xE5277 | Total amount for every level
->| Total Rainbow Scales | int | 0xE527C | 
+>| RC Rainbow Scales | int | 0xE527C | Value for Rainbow Cliffs, doesn't affect totals screen
 
 ---
 
@@ -55,4 +56,4 @@ To Do: Check variable type
 
 | Variable | Variable Type | Hex Offset | Notes
 | - | - | - | -
-| Aurora's Kids Total Count | int | 0xD3947 | 
+| Aurora's Kids Total Count | int | 0xD3947 | Just the amount for the UI
