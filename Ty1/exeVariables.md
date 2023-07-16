@@ -11,8 +11,6 @@ parent: Ty 1
 
 All known variables that are hardcoded in the exe. All offsets are from the newest exe version of Ty (version  1.44)
 
-To Do: Check variable type
-
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -39,8 +37,10 @@ To Do: Check variable type
 >
 >| Variable | Variable Type | Hex Offset | Notes
 >| - | - | - | -
->| Level Total Opals | int | 0xE5277 | Total amount for every level
+>| Level Total Opals | int | 0xE5277 | Total amount for all levels
 >| RC Rainbow Scales | int | 0xE527C | Value for Rainbow Cliffs, doesn't affect totals screen
+
+Would be nice to have the golden cogs and picture frame values but unfortunately haven't found them yet
 
 ---
 
