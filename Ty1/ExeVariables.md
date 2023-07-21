@@ -68,10 +68,11 @@ Would be nice to have the max golden cogs value but unfortunately haven't found 
 >| 3 | 25
 >| 4 | 50
 >| 5 | 100
->| 6 | 200
+>
+>Unfortunately SAR 6 isn't possible as it gives a value of 200 and the amount to minus and charge bite requirement values are both signed bytes which can only go up to 127.
 >
 >Values below 3 aren't really useful as they're not a whole number. Eg. if you used a SAR value of 2 the first charge bite shown on the UI would be at 13, as the requirement for charge bites needs to be less than the hidden counter, 
-the second one would be 12 (total of 25 on the hidden counter), then the next would be 13 (total of 38), next would be 12 (total of 50), etc
+the second one would be 12 (total of 25 on the hidden counter), then the next would be 13 (total of 38), next would be 12 (total of 50), etc. The inconsistent amount would make the charge bite requirement and minusing value not match up since its a whole number
 >
 >The offsets for all the charge bite values are listed below
 >
