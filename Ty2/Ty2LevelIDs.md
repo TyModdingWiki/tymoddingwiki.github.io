@@ -54,3 +54,11 @@ parent: Ty 2
 | M64 | Wobbygon Bay
 | M67 | Training Grounds 1
 | M68 | Training Grounds 2
+
+## Unused Levels
+
+| Level ID | Level Name
+| :-: | -----------------------------
+| Q1 | Testing
+| Q2 | .
+| Q3 | Ocean Girl
