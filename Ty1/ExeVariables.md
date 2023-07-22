@@ -104,13 +104,29 @@ the second one would be 12 (total of 25 on the hidden counter), then the next wo
 
 ## Picture Frames
 
-Picture frames work quite differently from the other variables, their IDs get kept track of per level, and counted in a unique way. Altering how many are in each level is less feasable but is possible with some smart planning, custom code would really help with making this easier
+Picture frames work quite differently from the other variables, their IDs get kept track of per level, and counted in a unique way. 
+Increasing the amount of per level isn't fully possible but can be done with some trickery, decreasing the amount per level is much easier though, custom code or figuring out how to shuffle values around for each level without crashing would really help with being able to increase them
 
-Below is offsets for each picture frame ID (all IDs are ints), the levels they are assigned to by default, and the pointer address the local variable for the ID is at by default (used to edit a LEA opcode (load effective address))
+Below is offsets for each picture frame ID (all IDs are ints), the levels they are assigned to by default, and the pointer address for the local variable the ID are at by default (used to edit a LEA opcode (load effective address))
+
+To edit which picture frames are assigned to which level just edit the ID at the offset, its even possible to have 2 levels have the same ID.
+
+To lower the amount per level just go to the LEA offset and change the value to a lower variable pointer address, eg. if you wanted to change Rainbow cliffs to have 7 picture frames instead of 9 you would change the LEA from -52, to -44.
+Also keep in mind which variables will be cut off from lowering the amount and reassign the IDs as needed.
+
+Increasing the amount of IDs is a bit more complex and quite limited, it requires setting a level that is assigned IDs before another level (all the levels below are ordered) to have the same amount or less than the usual amount the next level would have.
+eg. setting Rainbow cliffs LEA to -44 you can then set Two ups LEA up to -52 and use IDs at address -52 and -48 where Rainbow cliffs sets them for Two up as they have already been assigned a value and are no longer being used for Rainbow cliffs. 
+This will then make Rainbow cliffs have 7 IDs and Two up have either 8 or 9.
+
+But for something like Lyre Lyre which only has 5 and the level before it, snow worries, has 24, you would need to lower snow worries down to at least 5 IDs to then be able to add new unique IDs to Lyre to not have any overlap between the two levels
+
+You could even go across multiple levels to increase the amount of ID, eg. could set Rainbow Cliffs and Two up to 6 frames, to then be able to increase the amount in Walk in the Park up to 9, just keep in mind you would need to set the ID at -44 with Two Ups addresses
 
 ### Rainbow Cliffs (Z1)
 
 Total frames: 9
+
+>LEA Value Offset: 0x210E
 
 | ID | Hex Offset | Variable Pointer Address
 | :-: | :-: | :-:
@@ -128,6 +144,8 @@ Total frames: 9
 
 Total frames: 7
 
+>LEA Value Offset: 0x21D7
+
 | ID | Hex Offset | Variable Pointer Address
 | :-: | :-: | :-:
 | 9 | 0x21d0 | ebp -44
@@ -142,6 +160,8 @@ Total frames: 7
 
 Total frames: 6
 
+>LEA Value Offset: 0x2242
+
 | ID | Hex Offset | Variable Pointer Address
 | :-: | :-: | :-:
 | 16 | 0x223b | ebp -40
@@ -154,6 +174,8 @@ Total frames: 6
 ### Ship Rex (A3)
 
 Total frames: 9
+
+>LEA Value Offset: 0x22F7
 
 | ID | Hex Offset | Variable Pointer Address
 | :-: | :-: | :-:
@@ -170,6 +192,8 @@ Total frames: 9
 ### Bridge on the River Ty (B1)
 
 Total frames: 20
+
+>LEA Value Offset: 0x2341
 
 | ID | Hex Offset | Variable Pointer Address
 | :-: | :-: | :-:
@@ -197,6 +221,8 @@ Total frames: 20
 ### Snow Worries (B2)
 
 Total frames: 24
+
+>LEA Value Offset: 0x2407
 
 | ID | Hex Offset | Variable Pointer Address
 | :-: | :-: | :-:
@@ -229,6 +255,8 @@ Total frames: 24
 
 Total frames: 5
 
+>LEA Value Offset: 0x252D
+
 | ID | Hex Offset | Variable Pointer Address
 | :-: | :-: | :-:
 | 75 | 0x2526 | ebp -36
@@ -242,6 +270,8 @@ Total frames: 5
 Total frames: 29
 
 First variable ebp -132 uses a int for the address as its too big for a signed byte
+
+>LEA Value Offset: 0x258D
 
 | ID | Hex Offset | Variable Pointer Address
 | :-: | :-: | :-:
@@ -279,6 +309,8 @@ First variable ebp -132 uses a int for the address as its too big for a signed b
 
 Total frames: 18
 
+>LEA Value Offset: 0x26DD
+
 | ID | Hex Offset | Variable Pointer Address
 | :-: | :-: | :-:
 | 109 | 0x2680 | ebp -88
@@ -305,6 +337,8 @@ Total frames: 18
 Total frames: 123
 
 The bonus worlds work a bit different and end on a different offset and use ints for the memory addresses
+
+>LEA Value Offset: 0x2C84
 
 | ID | Hex Offset | Variable Pointer Address
 | :-: | :-: | :-:
@@ -435,6 +469,8 @@ The bonus worlds work a bit different and end on a different offset and use ints
 ### Bonus World [Night] (E3)
 
 Total frames: 123
+
+>LEA Value Offset: 0x2F76
 
 | ID | Hex Offset | Variable Pointer Address
 | :-: | :-: | :-:
