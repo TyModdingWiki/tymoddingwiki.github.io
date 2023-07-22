@@ -124,7 +124,7 @@ You could even go across multiple levels to increase the amount of ID, eg. could
 
 To **disable** picture frames showing on the totals screen for a level just change the LEA to -16 (F0).
 
-Below is offsets for each picture frame ID (all IDs are ints), the levels they are assigned to by default, and the pointer address for the local variable the IDs are located by default (used to edit a LEA opcode)
+Below is offsets for each picture frame ID (all IDs are ints), the levels they are assigned to by default, and the pointer address for the local variable the IDs are located by default (reference for editing the LEA opcode)
 
 ### Rainbow Cliffs (Z1)
 
