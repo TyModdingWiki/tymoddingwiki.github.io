@@ -105,9 +105,9 @@ the second one would be 12 (total of 25 on the hidden counter), then the next wo
 ## Picture Frames
 
 Picture frames work quite differently from the other variables, their IDs get kept track of per level, and counted in a unique way. 
-Increasing the amount of per level isn't fully possible but can be done with some trickery, decreasing the amount per level is much easier though, custom code or figuring out how to shuffle values around for each level without crashing would really help with being able to increase them
+They all get counted from the address assigned in the LEA(load effective address) up until the address ebp -20, except for the bonus levels which work a bit differently, they instead count up until address ebp -136.
 
-Below is offsets for each picture frame ID (all IDs are ints), the levels they are assigned to by default, and the pointer address for the local variable the ID are at by default (used to edit a LEA opcode (load effective address))
+Increasing the amount of per level isn't fully possible but can be done with some trickery, decreasing the amount per level is much easier though, custom code or figuring out how to shuffle values around for each level without crashing would really help with being able to increase them
 
 To edit which picture frames are assigned to which level just edit the ID at the offset, its even possible to have 2 levels have the same ID.
 
@@ -121,6 +121,8 @@ This will then make Rainbow cliffs have 7 IDs and Two up have either 8 or 9.
 But for something like Lyre Lyre which only has 5 and the level before it, snow worries, has 24, you would need to lower snow worries down to at least 5 IDs to then be able to add new unique IDs to Lyre to not have any overlap between the two levels
 
 You could even go across multiple levels to increase the amount of ID, eg. could set Rainbow Cliffs and Two up to 6 frames, to then be able to increase the amount in Walk in the Park up to 9, just keep in mind you would need to set the ID at -44 with Two Ups addresses
+
+Below is offsets for each picture frame ID (all IDs are ints), the levels they are assigned to by default, and the pointer address for the local variable the IDs are located by default (used to edit a LEA opcode)
 
 ### Rainbow Cliffs (Z1)
 
