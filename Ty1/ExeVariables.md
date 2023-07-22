@@ -111,16 +111,18 @@ Increasing the amount of per level isn't fully possible but can be done with som
 
 To edit which picture frames are assigned to which level just edit the ID at the offset, its even possible to have 2 levels have the same ID.
 
-To lower the amount per level just go to the LEA offset and change the value to a lower variable pointer address, eg. if you wanted to change Rainbow cliffs to have 7 picture frames instead of 9 you would change the LEA from -52, to -44.
+To **lower** the amount per level just go to the LEA offset and change the value to a lower variable pointer address, eg. if you wanted to change Rainbow cliffs to have 7 picture frames instead of 9 you would change the LEA from -52, to -44.
 Also keep in mind which variables will be cut off from lowering the amount and reassign the IDs as needed.
 
-Increasing the amount of IDs is a bit more complex and quite limited, it requires setting a level that is assigned IDs before another level (all the levels below are ordered) to have the same amount or less than the usual amount the next level would have.
+**Increasing** the amount of IDs is a bit more complex and quite limited, it requires setting a level that is assigned IDs before another level (all the levels below are ordered) to have the same amount or less than the usual amount the next level would have.
 eg. setting Rainbow cliffs LEA to -44 you can then set Two ups LEA up to -52 and use IDs at address -52 and -48 where Rainbow cliffs sets them for Two up as they have already been assigned a value and are no longer being used for Rainbow cliffs. 
 This will then make Rainbow cliffs have 7 IDs and Two up have either 8 or 9.
 
 But for something like Lyre Lyre which only has 5 and the level before it, snow worries, has 24, you would need to lower snow worries down to at least 5 IDs to then be able to add new unique IDs to Lyre to not have any overlap between the two levels
 
 You could even go across multiple levels to increase the amount of ID, eg. could set Rainbow Cliffs and Two up to 6 frames, to then be able to increase the amount in Walk in the Park up to 9, just keep in mind you would need to set the ID at -44 with Two Ups addresses
+
+To **disable** picture frames showing on the totals screen for a level just change the LEA to -16 (F0).
 
 Below is offsets for each picture frame ID (all IDs are ints), the levels they are assigned to by default, and the pointer address for the local variable the IDs are located by default (used to edit a LEA opcode)
 
