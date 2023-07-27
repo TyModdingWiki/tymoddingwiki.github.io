@@ -102,6 +102,16 @@ the second one would be 12 (total of 25 on the hidden counter), then the next wo
 
 ---
 
+## Boomerangs
+
+Most of the values for boomerangs are in the global.model file
+
+| Variable | Variable Type | Hex Offset | Notes
+| - | :-: | - | -
+| Doomerang Duration | float | 0x1F95AC
+
+---
+
 ## Picture Frames
 
 Picture frames work quite differently from the other variables, their IDs get kept track of per level, and counted in a unique way. 
