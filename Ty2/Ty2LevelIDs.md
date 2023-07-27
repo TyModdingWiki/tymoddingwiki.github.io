@@ -55,7 +55,7 @@ parent: Ty 2
 | M67 | Training Grounds 1
 | M68 | Training Grounds 2
 
-## Unused Levels
+## Test Levels
 
 | Level ID | Level Name
 | :-: | -----------------------------
