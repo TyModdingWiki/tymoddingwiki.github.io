@@ -20,7 +20,7 @@
 | C4 | Fluffy's Fjord
 | D1 | Final Cutscene/Credits
 | D2 | Cass' Crest
-| D3 | Unused [Has Empty .lvl2]
+| D3 | Unused [Has Empty .lv2]
 | D4 | Crikey's Cove
 | E1 | Cass' Pass
 | E2 | Bonus World [Day]
