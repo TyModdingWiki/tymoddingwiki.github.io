@@ -13,7 +13,7 @@ To close the local host just close visual studio or the terminal, when you want 
 
 ## Creating pages and resources
 To create any pages just add a .md file to the folder for the game you want to create the page for in the docs folder.   
-Any resources you want to use for the page has to go in the docs folder too, mkdocs uses the docs folder as the base directory. So for example the gold cog icon thats being used already its file directory would be `assets/GoldCogIcon.png`. (Also not sure yet if this does actually apply to the markdown files or only specific mkdocs files)
+Any resources you want to use for a page typically are put in the docs folder too, anything mkdocs specifically uses has the docs folder as the base directory (mainly just the mkdocs.yml file).
 
 ## Mkdocs documentation
 The mkdocs material documentation is really good to follow to find out how to use the huge amount of features mkdocs has [https://squidfunk.github.io/mkdocs-material/](https://squidfunk.github.io/mkdocs-material/)
