@@ -4,9 +4,9 @@ This page will walk you through the basics you'll need to know to get started wi
 
 ## Extracting the rkvs
 
-To get started with extracting the rkvs to edit the game files you'll need rkvMT (or Chippy's [rkv extractor](https://github.com/1superchip/Rkv-Extractor){:target="_blank"}, but for this guide we'll use rkvMT)  
+To get started with extracting the rkvs to edit the game files you'll need Koushi's tool called rkvMT (or Chippy's [rkv extractor](https://github.com/1superchip/Rkv-Extractor){:target="_blank"}, but for this guide we'll use rkvMT)  
 
-- Download the rkvMT tool here [https://github.com/tanoshiikoushi/rkvMT/releases](https://github.com/tanoshiikoushi/rkvMT/releases){:target="_blank"}
+- Download rkvMT here [https://github.com/tanoshiikoushi/rkvMT/releases](https://github.com/tanoshiikoushi/rkvMT/releases){:target="_blank"}
 - After downloading launch the exe, it'll open up a console window, but don't worry its not too complex to use
 - First load the rkv you want to extract, the main rkv you'll probably want to extract is Data_PC.rkv, which contains most of the game's files. For this example I'll load the rkv into the out slot.  
 You can more easily enter the folder by copying the folder path in the path text box at the top of file explorer
