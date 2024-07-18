@@ -38,12 +38,16 @@ If you don't use those setting the colour channels will be flipped, or the trans
 
 ### Level object placement
 
-Level object files are pretty easy to edit as they're just plain text, you can just open the `.lv2` files in any text editor. Unfortunately right now there is no level editor to easily edit the object placement in levels, but the is a program called Ty pos which displays Ty's in game coordinates, which helps to figure out where to place objects.  
+Level object files are pretty easy to edit as they're just plain text, you can just open the `.lv2` files in any text editor. Unfortunately right now there is no level editor to easily edit the object placement in levels, but there is 2 ways to help place objects. 
+
+There is a program called Ty pos which displays Ty's in game coordinates, which helps to figure out where to place objects.  
 There is 3 different versions:
 
 - [Pixel's version (In the Ty speedrunning discord)](https://discord.com/channels/161894912080478208/706965938830049401/910153993265758240){:target="_blank"}
 - Buzchy's version which includes rotation [https://github.com/Senashu/TyPos-Rotation](https://github.com/Senashu/TyPos-Rotation){:target="_blank"}
 - [Matt's version (In the modding discord)](https://discord.com/channels/1029229401314967562/1029419492641615903/1077002267271626762){:target="_blank"} which includes logging but no rotation.
+
+The second way is with Floralz's WIP lv2 exporter plugin for blender, not every custom property is currently supported for the lv2, but it does help to place objects easier for the ones it does support. You can download the plugin from the modding discord [here](https://discord.com/channels/1029229401314967562/1029384056984571934/1231455330609926235){:target="_blank"}, and Floralz's messages below explain how to use it (Note: any lv2 object can be any mesh (not just a plane) as long as the collection its in uses the name of the object you want it to be in the lv2).
 
 ### Object properties
 
