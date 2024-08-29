@@ -1,14 +1,12 @@
 # Editing MDL Models
 
-[//]: # (Use <h1> instead so it doesn't break the table of contents and so its not included in the table of contents)
-**<h1>The Plugin Only Supports Blender Versions 2.80 - 3.4.1</h1>**
-
----
 !!! warning "Animations"
     The plugin currently doesn't support importing/exporting `rigging`, or `editing animations`
 
 ## Installation
-To edit the models you're gonna need blender (between version 2.80 - 3.4.1) and the MDL2 blender plugin created by Kana.
+To edit the models you're gonna need blender and the MDL2 blender plugin created by Kana.
+!!! info "Supported Blender Versions"
+    The Plugin Only Supports Blender Versions 2.80 - 3.4.1
 
 To get started:
 
