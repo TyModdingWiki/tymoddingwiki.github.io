@@ -59,8 +59,8 @@ All the property IDs are listed at the top of the file, and multiple properties 
 
 ### Models
 
-Models are stored in the `.mdl` files and can be imported and exported in blender using Kana's Ty 1 mdl plugin [https://github.com/ElusiveFluffy/MDL2-Blender-Plugin](https://github.com/ElusiveFluffy/MDL2-Blender-Plugin){:target="_blank"}.  
-All the documentation on how to use the plugin is in the readme on the github page.
+Models are stored in the `.mdl` files and can be imported and exported in blender using Kana's Ty 1 mdl plugin.  
+All the documentation on how to install and use the plugin is on the [Editing MDL Models Page](../Ty1/EditingMDLs.md).
 
 ## Loading modified game files
 
