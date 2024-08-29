@@ -12,7 +12,7 @@ To edit the models you're gonna need blender (between version 2.80 - 3.4.1) and 
 
 To get started:
 
-- Download the most recent version from the releases tab [https://github.com/ElusiveFluffy/MDL2-Blender-Plugin/releases](https://github.com/ElusiveFluffy/MDL2-Blender-Plugin/releases)
+- Download the most recent version from the releases tab [https://github.com/ElusiveFluffy/MDL2-Blender-Plugin/releases](https://github.com/ElusiveFluffy/MDL2-Blender-Plugin/releases){:target="_blank"}
 - Open blender and go to `Edit>Preferences>Add-ons`, and click on the install button at the top right
 - Navigate to the zip file downloaded from the releases tab and select it
 - Now just enable the plugin to have the MDL import and export options
