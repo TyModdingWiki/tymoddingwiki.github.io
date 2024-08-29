@@ -33,9 +33,9 @@ theme:
         name: Switch to system preference
       primary: indigo
       accent: amber
-  logo_light_mode: assets/GoldCogIcon.png
-  logo_dark_mode: assets/PlatinumCogIcon.png
-  favicon: assets/GoldCogIcon.png
+  logo_light_mode: assets/Images/GoldCogIcon.png
+  logo_dark_mode: assets/Images/PlatinumCogIcon.png
+  favicon: assets/Images/GoldCogIcon.png
 
 extra_css:
   - css/LogoToggle.css
