@@ -12,10 +12,10 @@ hide:
 This wiki contains modding documentation discovered by the Ty modding community, all sorted in one place
 
 To get started with modding you can follow the the getting started guides here:<br />
-[Ty 1 Getting Started](/Ty1)<br />
-[Ty 2 Getting Started](/Ty2)
+[Ty 1 Getting Started](Ty1/index.md)<br />
+[Ty 2 Getting Started](Ty2/index.md)
 
 To get started with Kana's TygerFramework Plugin loader you can follow the getting started guide here:<br />
-[TygerFramework Getting Started](/TygerFramework)
+[TygerFramework Getting Started](TygerFramework/index.md)
 
 You can also navigate through the tabs or use the search bar to find what you need, the wiki is still a work in progress and more is being added as it gets discovered. If you have any questions about anything Ty modding related feel free to join the [Ty modding discord](https://discord.gg/g8kHTR42Cc){:target="_blank"}

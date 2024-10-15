@@ -102,7 +102,7 @@ Can be used to get the base address of the game by casting it to a `#!C++ DWORD`
 
 <h3> Syntax </h3>
 
-Only to be used for when you would `#!C++ return false` in the `TygerFramework Plugin Initialize` export function. More info on the [<ins>Error Message</ins>](/TygerFramework/#error-message) section on the Getting Started page
+Only to be used for when you would `#!C++ return false` in the `TygerFramework Plugin Initialize` export function. More info on the [<ins>Error Message</ins>](../index.md#error-message) section on the Getting Started page
 
 Gives more info for what went `wrong` during initialization of your plugin.
 

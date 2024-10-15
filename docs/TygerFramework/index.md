@@ -15,8 +15,8 @@ To include the API for the plugin just download the `API for Developing Plugins 
 Then just copy the `TygerFrameworkAPI.h` and `TygerFrameworkAPI.hpp` files into the project folder, then in visual studio add them as a existing item. If you `don't copy` them to the project folder it'll just reference the original location for the file. Which can cause `issues or make it more difficult when trying to include it`.
 
 Now just add `#!C++ #include "TygerFrameworkAPI.hpp"` to any classes that you want to use the API with.
-!!! warning "Use the .hpp not .h"
-    Make sure to `#!C++ #include` the `.hpp` file and `not the .h` file
+!!! warning "Use the .hpp"
+    Make sure to `#!C++ #include` the `.hpp` file and `not` the `.h` file
 
 ## Initializing the API
 
