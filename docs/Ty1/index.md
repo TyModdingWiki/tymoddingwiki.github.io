@@ -9,7 +9,7 @@ To get started with extracting the rkvs to edit the game files you'll need Koush
 - Download rkvMT here [https://github.com/tanoshiikoushi/rkvMT/releases](https://github.com/tanoshiikoushi/rkvMT/releases){:target="_blank"}
 - After downloading launch the exe, it'll open up a console window, but don't worry its not too complex to use
 - First load the rkv you want to extract, the main rkv you'll probably want to extract is Data_PC.rkv, which contains most of the game's files. For this example I'll load the rkv into the out slot.  
-You can more easily enter the folder by copying the folder path in the path text box at the top of file explorer
+You can more easily enter the file by dragging the rkv from file explorer into the rkvMT console window, and it'll write the path for you. (You can also do this with folders too)
 ```
 load "C:/path/to/Data_PC.rkv" out
 ```
