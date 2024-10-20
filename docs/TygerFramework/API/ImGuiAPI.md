@@ -15,7 +15,9 @@ API::GetTyWindowHandle();
 
 `#!C++ HWND`
 
-Returns the current Ty window handle, or `#!C++ nullptr` if TygerFramework had a issue getting the handle (most of the time it should be fine).
+Returns the current Ty window handle. 
+
+It will be a `#!C++ nullptr` if the Ty window hasn't shown yet or TygerFramework had a issue getting the handle (most of the time it should be fine).
 
 ## DrawingGUI
 ---

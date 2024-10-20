@@ -8,6 +8,9 @@
 
 ## Adding the API
 
+!!! info "Before Starting"
+    Before starting make sure to set your DLL to build as a `32 bit(x86)` DLL, otherwise the game will just `fail to load it`
+
 First you'll need to set your C++ version to `C++17` as thats the version the API needs. To set it just right click on the `project` then `Properties>General>C++ Language Standard`. Click on it and a arrow to the right will appear and clicking on that will have a dropdown of all the available versions. Just set it to `atleast C++17 or newer`.
 
 To include the API for the plugin just download the `API for Developing Plugins zip` from the releases tab: [<ins>https://github.com/ElusiveFluffy/TygerFramework/releases<ins>](https://github.com/ElusiveFluffy/TygerFramework/releases){:target="_blank"}.
@@ -36,7 +39,9 @@ extern "C" __declspec(dllexport) bool TygerFrameworkPluginInitialize(TygerFramew
     API::Initialize(param);
 }
 ```
-From this function you need to return a bool. `#!C++ return true` if your plugin `successfully` initialized, or `#!C++ false` if your plugin `failed` to initialize some code you needed. Returning false will make TygerFramework `unload` your plugin
+From this function you need to return a bool. `#!C++ return true` if your plugin `successfully` initialized, or `#!C++ false` if your plugin `failed` to initialize some code you needed. Returning false will make TygerFramework `unload` your plugin.
+
+Try not to take `too long` to initialize your plugin as it'll hold up other plugins from initializing, if your plugin needs to take a `while to initialize` its recommended to make a new thread for the initialization. Only `downside` to doing this would be you can't return a error to have your plugin unloaded if something goes wrong.
 
 ### Error Message
 If you `#!C++ return false`, you can also set a `error message` to give more info about what went wrong. It will also show the error in the plugin collapsed header in the TygerFramework window.
