@@ -109,7 +109,7 @@ bool WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) {
 
 If the input function is successfully subscribed to the `WndProc event` it'll return `#!C++ true`.
 
-## AddPluginWndProc
+## AddTickBeforeGame
 ---
 
 Tick event that runs every frame `before` the game runs its own logic.
