@@ -1,12 +1,12 @@
 # Editing MDL Models
 
 !!! warning "Animations"
-    The plugin currently doesn't support importing/exporting `rigging`, or `editing animations`
+    The plugin currently only has basic support for importing/exporting `rigging` (uses empties instead of bones as that was simpler to implement) and `weights`. The plugin doesn't support `editing animations` though
 
 ## Installation
 To edit the models you're gonna need blender and the MDL2 blender plugin created by Kana.
 !!! info "Supported Blender Versions"
-    The Plugin Only Supports Blender Versions 2.80 - 3.4.1
+    The Plugin Only Supports Blender Versions 3.0-4.3
 
 To get started:
 
