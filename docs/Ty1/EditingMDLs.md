@@ -24,21 +24,39 @@ When importing models if there is a `"DDS" folder` in the same folder as the MDL
 When importing the textures the plugin will automatically detect if it should be transparent. But sometimes the alpha check is incorrect and will result in models that should be opaque to be set as alpha blend.
 
 ## Setting the Texture
-When exporting the exporter uses the `first material slot's name` for the texture, as MDLs can only have 1 texture per mesh, and only support for a `diffuse` texture. 
+When exporting the exporter uses the `material names` for the texture names in the mdl.
 
-Everything inside of the materials are **NOT** used when exporting, as the game doesn't support them and to simplify exporting. 
+Everything inside of the materials are **NOT** used when exporting, as the game mostly just supports diffuse textures and doesn't support the blender nodes, and to simplify exporting. 
 
-If you're adding a texture to be used by the exported model all you need is at least a empty material with its name as the texture's name (`excluding` the .dds part, which isn't needed in the name) or a name of one in global.mad. 
+If you're adding a texture to be used by the exported model all that is need is at least a empty material with its name the same as the texture's name (`excluding` the .dds part, which isn't needed in the name) or a name/alias of one in global.mad. 
 
 !!! info "Exporting"
     The plugin will not export the dds textures with the model when exporting. Its expected that they're already in or modded into the game
+
+## Sub Objects
+Sub objects are created based on collections in blender, all meshes in a collection will be grouped into a sub object.
+
+!!! info "Merged Sub Object Meshes"
+    Since v1.3 the importer by default merges most of the meshes in each sub object together (it'll still keep the meshes in the right sub objects), for faster import times, and cleaner meshes in blender. This setting can be disabled in the import settings on the right side of the file selection window if needed.
+
+Some examples of what sub objects are used for, or to keep in mind:
+
+- Some actors in game will hide/show certain sub objects in certain situations, like Ty's bite head model, or the motion sub objects for rangs, etc.
+- Each fragment mesh uses a sub object, more details about fragment meshes below.
+- There is a limit of `32 bones` per sub object. If you need more bones for a model then you'll need to split the mesh up into multiple sub objects.
+- Each mesh in a sub object seems to have a vertex count limit of `16383 vertices`. If you encounter crashing when trying to load your MDL in game one issue could be the vertex count being too high, so try splitting up some high poly meshes into multiple sub objects
+
+## Adding Fragment Meshes
+To add a fragment mesh all you need to do is have the fragment collection/sub object name start with `F_` (eg. `F_FragName`). This will automatically export that sub object as a fragment.
+
+Keep in mind each individual fragment mesh will need to be in its own collection/sub object, if you want them to be separate, otherwise the fragment meshes in the same sub object will get grouped together into 1 fragment.
 
 ## Setting Collision Properties
 Collisions are set through a custom collision panel, to easily select collision types (names taken from the comments in global.mad), with support for custom ones that you've added in the `global.mad` file.
 
 !!! info "A couple things to note when setting a collision property"
 
-    - If a collision property is set it will take priority over the texture name from the material when exporting. Because each mesh can only have either a texture name or collision property.
+    - If a collision property is set it will take priority over all of the texture names from the materials when exporting. Because of the way its set up with the collision panel each mesh can only have either texture names or a collision property.
     - If a mesh has a collision property it will typically be rendered `invisible`. This can be changed in `global.mad` but not fully recommended.
 
 The collision panel is located in the `object data properties` tab
