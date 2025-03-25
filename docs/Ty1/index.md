@@ -65,14 +65,15 @@ All the documentation on how to install and use the plugin is on the [Editing MD
 ## Loading modified game files
 
 There is 2 different ways to load the files you've modified into the game, either using the PC_External folder or creating a Patch_PC.rkv.  
-Using PC external is easier to quickly test different changes to the files, but it's more limited. Some files will only load with the debug OpenAL dll (like mdl files), and some won't load at all in there (like ogv files).  
-Only downsides is the debug OpenAL breaks bosses by not allowing you to enter the boss fights for the first time, even if you have enough thunder eggs. It also breaks the level select, and can sometimes glitch some textures.
+Using PC external is easier to quickly test different changes to the files, but it's a little bit more limited. Some files will only load with the PC_External Loader TygerFramework plugin by Kana or the debug OpenAL dll (like mdl files), and some won't load at all in there (like ogv files).  
+It is recommended to use the [PC_External Loader plugin](https://github.com/ElusiveFluffy/PC_External-Loader/releases){:target="_blank"} to not have the downsides of the debug OpenAL, which breaks bosses by not allowing you to enter the boss fights for the first time, even if you have enough thunder eggs. It also breaks the level select, and can sometimes glitch some textures. The PC_External Loader plugin also has more flexibility with putting files into folders in PC_External.
 
 ### PC_External
 
 First thing to do for the PC_External method is to create a folder in the game folder and make sure to name the folder exactly like `"PC_External"`.  
 Now just copy any modified files into that folder. **They do not need to be in the same sub folders they were extracted to, just put them in the root of PC_External**  
-To use the debug openAL, which can download it from here [Debug OpenAL32.dll](../assets/OpenAL/DebugOpenAL32.dll){:download="OpenAL32.dll"}, and just put it in the folder for the game replacing the one already there (recommend making a copy of the original one, just to easily be able to swap between them).
+To use the PC_External Loader plugin, you can download it from here [https://github.com/ElusiveFluffy/PC_External-Loader/releases](https://github.com/ElusiveFluffy/PC_External-Loader/releases){:target="_blank"} and follow the install instructions. Or with Matt's mod manager [https://github.com/xMcacutt/ty1_mod_manager](https://github.com/xMcacutt/ty1_mod_manager){:target="_blank"}  
+To use the debug openAL, which can download it from here [Debug OpenAL32.dll](../assets/OpenAL/DebugOpenAL32.dll){:download="OpenAL32.dll"}, just put it in the folder for the game replacing the one already there (recommend making a copy of the original one, just to easily be able to swap between them).
 
 If you didn't make a copy of the original OpenAL you can either verify the file integrity in steam or download it here [Retail OpenAL32.dll](../assets/OpenAL/RetailOpenAL32.dll){:download="OpenAL32.dll"}.
 
