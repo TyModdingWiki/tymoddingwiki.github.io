@@ -6,7 +6,7 @@
 ## Installation
 To edit the models you're gonna need blender and the MDL2 blender plugin created by Kana.
 !!! info "Supported Blender Versions"
-    The Plugin Only Supports Blender Versions 3.0-4.3
+    The Plugin Only Supports Blender Versions 3.0-4.4
 
 To get started:
 
